@@ -21,7 +21,8 @@
         emailInput.setAttribute("aria-invalid", "true");
       } else {
        
-        errorContainer.textContent = "";
+          errorContainer.textContent = "";
+          emailInput.style.border = "";
         emailInput.setAttribute("aria-invalid", "false");
       }
     });
