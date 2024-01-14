@@ -12,11 +12,7 @@
       if (!isValidEmail) {
         // Display error message and update ARIA attributes
         errorContainer.textContent = "Please enter a valid email address";
-        errorContainer.style.color = "red";
-        errorContainer.style.display = "block";
-        errorContainer.style.fontSize = "0.8em";
-        errorContainer.style.textAlign = "start";
-        errorContainer.style.paddingLeft = "0.9em";
+        errorContainer.classList.add("invalid");
         emailInput.style.border = "1px solid hsl(354, 100%, 66%)";
         emailInput.setAttribute("aria-invalid", "true");
 

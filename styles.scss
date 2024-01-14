@@ -89,6 +89,13 @@ input::placeholder {
     height: 2.75rem;
 }
 
+.invalid {
+    color: $Light_Red;
+    display: block;
+    font-Size: 0.8em;
+    text-Align: start;
+    padding-left: 0.9em;
+  }
 
 /* Submit Button Styles */
 .submit-btn {
