@@ -150,4 +150,17 @@ input::placeholder {
 .attribution a {
   font-weight: 700;
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 490px) {
+  fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .dashboard {
+    width: 80%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
