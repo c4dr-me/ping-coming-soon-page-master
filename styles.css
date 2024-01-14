@@ -158,9 +158,9 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding: 0.6rem;
   }
   .dashboard {
     width: 80%;
-    margin: auto;
   }
 }/*# sourceMappingURL=styles.css.map */

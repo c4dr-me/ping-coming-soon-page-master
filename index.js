@@ -12,20 +12,23 @@
       if (!isValidEmail) {
         // Display error message and update ARIA attributes
         errorContainer.textContent = "Please enter a valid email address";
-          errorContainer.style.color = "red"; // Adjusted values as suited for the design
-          errorContainer.style.display = "block";
-          errorContainer.style.fontSize = "0.8em";
-          errorContainer.style.textAlign = "start";
-          errorContainer.style.paddingLeft = "0.9em";
-          emailInput.style.border = "1px solid hsl(354, 100%, 66%)";
+        errorContainer.style.color = "red";
+        errorContainer.style.display = "block";
+        errorContainer.style.fontSize = "0.8em";
+        errorContainer.style.textAlign = "start";
+        errorContainer.style.paddingLeft = "0.9em";
+        emailInput.style.border = "1px solid hsl(354, 100%, 66%)";
         emailInput.setAttribute("aria-invalid", "true");
-      } else {
-       
-          errorContainer.textContent = "";
-          emailInput.style.border = "";
+
+        // Append the error message below the input
+        emailInput.parentNode.appendChild(errorContainer);
+    } else {
+        // Clear error message and update ARIA attributes for a valid email
+        errorContainer.textContent = "";
+        emailInput.style.border = "";
         emailInput.setAttribute("aria-invalid", "false");
-      }
-    });
+    }
+});
   
     function validateEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
