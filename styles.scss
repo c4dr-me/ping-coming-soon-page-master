@@ -1,0 +1,159 @@
+/* Color Variables */
+$Blue: hsl(223, 87%, 63%);
+$Light_Red: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$Very_Dark_Blue: hsl(209, 33%, 12%);
+$fw_1: 100;
+$fw_2: 300;
+$fw_3: 700;
+
+/* Global Reset */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Body Styles */
+body {
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header Styles */
+.ping-logo {
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+/* Section Styles */
+section h1 {
+    font-weight: $fw_3;
+    color: $Very_Dark_Blue;
+    margin: 1rem 0;
+}
+
+.txt-render {
+    font-weight: $fw_1;
+    color: $Gray;
+    font-size: inherit;
+}
+
+.sub-txt {
+    font-size: 1rem;
+    color: $Very_Dark_Blue;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+/* Form Styles */
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 1rem 0 2rem 0;
+}
+
+input {
+    padding-left: 1rem;
+}
+
+input::placeholder {
+    color: $Gray;
+    font-weight: $fw_1;
+    opacity: 0.6;
+}
+
+.email {
+    border: 1px solid $Gray;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 2.75rem;
+}
+
+
+/* Submit Button Styles */
+.submit-btn {
+    height: 2.75rem;
+    border-radius: 2rem;
+    width: 8rem;
+    border: none;
+    background-color: $Blue;
+    font-weight: $fw_3;
+    color: white;
+    margin-left: 1rem;
+    transition: all 0.5s;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+
+/* Dashboard Image Styles */
+.dashboard {
+    width: 50%;
+    margin: auto;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-icons a {
+    border: 1px solid $Gray;
+    border-radius: 50%;
+    padding: .5rem;
+    aspect-ratio: 1/1;
+    color: $Blue !important;
+    background-color: white;
+    transition: all 0.5s;
+
+    &:hover {
+        color: white !important;
+        background-color: $Blue !important;
+        transform: rotateX(360deg);
+    }
+}
+
+/* Footer Styles */
+.copyright {
+    color: gray;
+    font-size: 0.75rem;
+    margin: 1rem;
+}
+
+/* Attribution Styles */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-weight: $fw_2;
+
+    a {
+        font-weight: $fw_3;
+        color: hsl(228, 45%, 44%);
+    }
+}
